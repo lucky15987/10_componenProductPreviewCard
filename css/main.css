@@ -84,4 +84,6 @@ h2 {
 }
 .container .preview-card .button svg {
   fill: white;
+  transform: scale(1.5);
+  margin-right: 5%;
 }/*# sourceMappingURL=main.css.map */
