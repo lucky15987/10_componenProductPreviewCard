@@ -2,8 +2,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  height: 100%;
   color: hsl(228deg, 12%, 48%);
+  background: hsl(30deg, 38%, 92%);
 }
 
 h1 {
@@ -22,19 +22,24 @@ h2 {
 
 .container {
   display: flex;
+  box-sizing: border-box;
   flex-direction: row;
-  background: hsl(30deg, 38%, 92%);
-  justify-content: space-around;
+  margin: 0 20%;
+  width: 60%;
+  height: 100px;
+  padding: 2%;
 }
 .container .preview-card {
   display: flex;
-  width: 50%;
   background: hsl(0deg, 0%, 100%);
-  margin: 50% 20%;
-  flex: 1;
+  box-sizing: border-box;
   border-radius: 20px;
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .container .preview-card img {
   width: 50%;
@@ -42,10 +47,41 @@ h2 {
 .container .preview-card .details {
   display: flex;
   flex-direction: column;
-  margin: 5%;
-  justify-content: space-between;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .container .preview-card .details .price {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container .preview-card .details .price .new-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-right: 20px;
+  color: hsl(158deg, 36%, 37%);
+}
+.container .preview-card .details .price .old-price {
+  text-decoration: line-through;
+}
+.container .preview-card .button {
+  display: inline-block;
+  background-color: hsl(158deg, 36%, 37%);
+  color: white;
+  font-size: x-large;
+  border-radius: 12px;
+  padding: 25px 16px;
+  text-decoration: none;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .preview-card .button svg {
+  fill: white;
 }/*# sourceMappingURL=main.css.map */
