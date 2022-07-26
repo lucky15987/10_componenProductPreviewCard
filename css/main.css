@@ -86,4 +86,7 @@ h2 {
   fill: white;
   transform: scale(1.5);
   margin-right: 5%;
+}
+.container .preview-card .button:hover {
+  background-color: hsl(158deg, 35%, 11%);
 }/*# sourceMappingURL=main.css.map */
